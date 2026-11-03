@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="130">
+  <defs>
+    <linearGradient id="stackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1217" />
+      <stop offset="100%" stop-color="#0A0A0A" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .cat-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; font-size: 11px; font-weight: 700; fill: #38BDF8; letter-spacing: 1.5px; }
+    .item { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; fill: #CBD5E1; }
+  </style>
+
+  <rect width="900" height="130" rx="12" fill="url(#stackGrad)" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Column 1: Backend & Systems -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="0" class="cat-title">BACKEND &amp; SYSTEMS</text>
+    <text x="0" y="24" class="item">Python (FastAPI, AsyncIO)</text>
+    <text x="0" y="44" class="item">TypeScript / Node.js</text>
+    <text x="0" y="64" class="item">Go (High-Concurrency)</text>
+  </g>
+
+  <line x1="240" y1="20" x2="240" y2="110" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+
+  <!-- Column 2: Data & Storage -->
+  <g transform="translate(270, 28)">
+    <text x="0" y="0" class="cat-title">DATA &amp; STORAGE</text>
+    <text x="0" y="24" class="item">SQLite (WAL + 64M Cache)</text>
+    <text x="0" y="44" class="item">Redis (In-Memory Cache)</text>
+    <text x="0" y="64" class="item">Google Drive VFS Mount</text>
+  </g>
+
+  <line x1="470" y1="20" x2="470" y2="110" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+
+  <!-- Column 3: Infra & Networking -->
+  <g transform="translate(500, 28)">
+    <text x="0" y="0" class="cat-title">INFRA &amp; NETWORKING</text>
+    <text x="0" y="24" class="item">Cloudflare WARP Anycast</text>
+    <text x="0" y="44" class="item">Nginx Reverse Proxy / SSL</text>
+    <text x="0" y="64" class="item">Linux SumoPod VPS</text>
+  </g>
+
+  <line x1="700" y1="20" x2="700" y2="110" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 3" />
+
+  <!-- Column 4: Architecture -->
+  <g transform="translate(730, 28)">
+    <text x="0" y="0" class="cat-title">CORE PRINCIPLES</text>
+    <text x="0" y="24" class="item">Sub-Second TTFT</text>
+    <text x="0" y="44" class="item">Zero Slop Standards</text>
+    <text x="0" y="64" class="item">Self-Healing Services</text>
+  </g>
+</svg>

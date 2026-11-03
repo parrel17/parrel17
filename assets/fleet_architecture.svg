@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="360">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11161F" />
+      <stop offset="100%" stop-color="#090D12" />
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="titleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#B2D5E5" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; font-weight: 700; font-size: 16px; fill: #FFFFFF; }
+    .card-badge { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 10px; font-weight: 600; fill: #38BDF8; }
+    .card-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; font-size: 12px; fill: #94A3B8; line-height: 1.5; }
+    .metric { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #E2E8F0; font-weight: 500; }
+    .metric-label { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 10px; fill: #64748B; }
+  </style>
+
+  <!-- CARD 1: 9Router AI Fleet (Top-Left) -->
+  <g transform="translate(0, 0)">
+    <rect width="438" height="170" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="438" height="170" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" />
+    
+    <g transform="translate(24, 24)">
+      <!-- Icon & Status -->
+      <circle cx="12" cy="12" r="12" fill="#0369A1" fill-opacity="0.2" />
+      <path d="M 8 12 L 11 15 L 17 9" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="16" class="card-title">9Router AI Proxy Gateway</text>
+      <rect x="330" y="2" width="60" height="20" rx="4" fill="#0C4A6E" fill-opacity="0.4" />
+      <text x="360" y="16" class="card-badge" text-anchor="middle">FLEET</text>
+
+      <text x="0" y="44" class="card-desc">Distributed upstream AI proxy with multi-account load balancing,</text>
+      <text x="0" y="60" class="card-desc">SOCKS5 WARP Anycast egress protection, and sub-2s TTFT.</text>
+
+      <!-- Metrics -->
+      <line x1="0" y1="80" x2="390" y2="80" stroke="#1E293B" stroke-width="1" />
+      <text x="0" y="102" class="metric-label">UPSTREAM ROUTING</text>
+      <text x="0" y="118" class="metric">Priority Fallback &amp; Mesh</text>
+
+      <text x="210" y="102" class="metric-label">EGRESS SECURITY</text>
+      <text x="210" y="118" class="metric">Cloudflare WARP Egress</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: Nexa Movie (Top-Right) -->
+  <g transform="translate(462, 0)">
+    <rect width="438" height="170" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="438" height="170" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" />
+
+    <g transform="translate(24, 24)">
+      <circle cx="12" cy="12" r="12" fill="#0369A1" fill-opacity="0.2" />
+      <polygon points="10,8 17,12 10,16" fill="#38BDF8" />
+      <text x="32" y="16" class="card-title">Nexa Movie Platform</text>
+      <rect x="330" y="2" width="60" height="20" rx="4" fill="#0C4A6E" fill-opacity="0.4" />
+      <text x="360" y="16" class="card-badge" text-anchor="middle">MEDIA</text>
+
+      <text x="0" y="44" class="card-desc">High-concurrency streaming engine with custom VFS mounting,</text>
+      <text x="0" y="60" class="card-desc">HLS transmuxer, TMDB zero-slop metadata, and binary sync.</text>
+
+      <line x1="0" y1="80" x2="390" y2="80" stroke="#1E293B" stroke-width="1" />
+      <text x="0" y="102" class="metric-label">STORAGE ENGINE</text>
+      <text x="0" y="118" class="metric">5 TiB VFS Google Drive</text>
+
+      <text x="210" y="102" class="metric-label">STREAM PROTOCOL</text>
+      <text x="210" y="118" class="metric">Dynamic HLS + Range Header</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: Nexa Finance (Bottom-Left) -->
+  <g transform="translate(0, 190)">
+    <rect width="438" height="170" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="438" height="170" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" />
+
+    <g transform="translate(24, 24)">
+      <circle cx="12" cy="12" r="12" fill="#0369A1" fill-opacity="0.2" />
+      <path d="M 8 16 L 12 8 L 16 12 L 18 10" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+      <text x="32" y="16" class="card-title">Nexa Finance Core</text>
+      <rect x="330" y="2" width="60" height="20" rx="4" fill="#0C4A6E" fill-opacity="0.4" />
+      <text x="360" y="16" class="card-badge" text-anchor="middle">FINTECH</text>
+
+      <text x="0" y="44" class="card-desc">Next.js + SQLite transactional platform designed with Bauhaus</text>
+      <text x="0" y="60" class="card-desc">Cream aesthetics, zero-emoji SVGs, and cryptographic OTP.</text>
+
+      <line x1="0" y1="80" x2="390" y2="80" stroke="#1E293B" stroke-width="1" />
+      <text x="0" y="102" class="metric-label">DATABASE LAYER</text>
+      <text x="0" y="118" class="metric">SQLite (WAL + 64M Cache)</text>
+
+      <text x="210" y="102" class="metric-label">AUTH &amp; SECURITY</text>
+      <text x="210" y="118" class="metric">5-Min Transient OTP</text>
+    </g>
+  </g>
+
+  <!-- CARD 4: Astra Hub & Bots (Bottom-Right) -->
+  <g transform="translate(462, 190)">
+    <rect width="438" height="170" rx="12" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+    <rect x="0" y="0" width="438" height="170" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" />
+
+    <g transform="translate(24, 24)">
+      <circle cx="12" cy="12" r="12" fill="#0369A1" fill-opacity="0.2" />
+      <circle cx="12" cy="12" r="6" fill="#38BDF8" />
+      <text x="32" y="16" class="card-title">Astra Hub &amp; Automation</text>
+      <rect x="330" y="2" width="60" height="20" rx="4" fill="#0C4A6E" fill-opacity="0.4" />
+      <text x="360" y="16" class="card-badge" text-anchor="middle">REALTIME</text>
+
+      <text x="0" y="44" class="card-desc">Event-driven Discord bot fleet, real-time QRIS payment polling,</text>
+      <text x="0" y="60" class="card-desc">and autonomous microservices with high fault-tolerance.</text>
+
+      <line x1="0" y1="80" x2="390" y2="80" stroke="#1E293B" stroke-width="1" />
+      <text x="0" y="102" class="metric-label">PAYMENT GATEWAY</text>
+      <text x="0" y="118" class="metric">Dynamic QRIS 35s Poller</text>
+
+      <text x="210" y="102" class="metric-label">DISCORD GATEWAY</text>
+      <text x="210" y="118" class="metric">Slash Commands + PM2 Fleet</text>
+    </g>
+  </g>
+</svg>
