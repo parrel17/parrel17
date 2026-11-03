@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="100%" height="160">
   <defs>
-    <!-- Dark Glass Gradient -->
+    <!-- Background Gradient -->
     <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111722" />
+      <stop offset="0%" stop-color="#141922" />
       <stop offset="50%" stop-color="#0d1117" />
       <stop offset="100%" stop-color="#0a0d14" />
     </linearGradient>
 
-    <!-- Animated Glowing Border Gradient -->
-    <linearGradient id="borderAnim" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Animated Glow Border -->
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#30363d">
         <animate attributeName="stop-color" values="#30363d;#38bdf8;#30363d;#818cf8;#30363d" dur="6s" repeatCount="indefinite" />
       </stop>
@@ -20,15 +20,10 @@
       </stop>
     </linearGradient>
 
-    <!-- Subtle Grid Pattern -->
-    <pattern id="headerGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#21262d" stroke-width="0.7" opacity="0.6" />
-    </pattern>
-
-    <!-- Sweep Beam -->
-    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Scanning Laser -->
+    <linearGradient id="laser" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.5" />
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </linearGradient>
   </defs>
@@ -38,63 +33,54 @@
     .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
   </style>
 
-  <!-- Card Background -->
-  <rect x="1" y="1" width="898" height="178" rx="14" fill="url(#headerBg)" stroke="url(#borderAnim)" stroke-width="1.5" />
-  <rect x="2" y="2" width="896" height="176" rx="13" fill="url(#headerGrid)" />
+  <!-- Card Frame -->
+  <rect x="1" y="1" width="898" height="158" rx="14" fill="url(#headerBg)" stroke="url(#borderGlow)" stroke-width="1.2" />
 
-  <!-- Animated Top Border Laser Line -->
-  <line x1="20" y1="1" x2="880" y2="1" stroke="url(#sweep)" stroke-width="2">
+  <!-- Animated Top Border Laser -->
+  <line x1="20" y1="1" x2="300" y2="1" stroke="url(#laser)" stroke-width="2">
     <animate attributeName="x1" values="-300;900" dur="4s" repeatCount="indefinite" />
     <animate attributeName="x2" values="0;1200" dur="4s" repeatCount="indefinite" />
   </line>
 
-  <!-- Left: Profile Identity -->
-  <g transform="translate(36, 30)">
-    <!-- Animated Status Pill -->
-    <rect x="0" y="0" width="168" height="24" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1" />
-    
-    <!-- Ripple Ping -->
-    <circle cx="14" cy="12" r="4" fill="#38bdf8" />
-    <circle cx="14" cy="12" r="4" fill="none" stroke="#38bdf8" stroke-width="1.2">
-      <animate attributeName="r" values="3;10;3" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite" />
+  <!-- Left: Profile Info -->
+  <g transform="translate(36, 28)">
+    <!-- Status Pill -->
+    <rect x="0" y="0" width="108" height="22" rx="11" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <circle cx="12" cy="11" r="3.5" fill="#38bdf8" />
+    <circle cx="12" cy="11" r="3.5" fill="none" stroke="#38bdf8" stroke-width="1">
+      <animate attributeName="r" values="3;8;3" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
     </circle>
-    
-    <text x="28" y="16" fill="#7dd3fc" font-size="11" font-weight="600" class="font-mono">FLEET // PRODUCTION</text>
+    <text x="24" y="15" fill="#7dd3fc" font-size="10" font-weight="600" class="font-mono">AVAILABLE</text>
 
-    <!-- Name & Title -->
-    <text x="0" y="58" fill="#f0f6fc" font-size="28" font-weight="700" letter-spacing="-0.5" class="font-sans">Farrel Athallah</text>
-    <text x="0" y="82" fill="#8b949e" font-size="14" font-weight="500" class="font-sans">Systems &amp; Backend Software Engineer</text>
-    <text x="0" y="105" fill="#6e7681" font-size="12" font-weight="400" class="font-sans">Designing high-throughput AI routing meshes, cloud media VFS &amp; transactional backends.</text>
+    <!-- Name & Subtitle -->
+    <text x="0" y="56" fill="#f0f6fc" font-size="28" font-weight="700" letter-spacing="-0.5" class="font-sans">Farrel Athallah</text>
+    <text x="0" y="80" fill="#8b949e" font-size="14" font-weight="500" class="font-sans">Software Engineer • Systems &amp; Backend</text>
+    <text x="0" y="104" fill="#6e7681" font-size="12" font-weight="400" class="font-sans">Building distributed web applications, streaming pipelines, and backend microservices.</text>
   </g>
 
-  <!-- Right: Architecture Metric Telemetry -->
-  <g transform="translate(615, 26)">
-    <rect x="0" y="0" width="248" height="128" rx="10" fill="#0b0e14" stroke="#21262d" stroke-width="1" />
-    
-    <!-- Header of mini-card -->
-    <g transform="translate(16, 20)">
-      <circle cx="4" cy="4" r="3" fill="#10b981">
-        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
-      </circle>
-      <text x="14" y="7" fill="#8b949e" font-size="11" font-weight="600" class="font-mono">FLEET TELEMETRY</text>
+  <!-- Right: Elegant Geometric Node Art (NOT a server monitor) -->
+  <g transform="translate(760, 80)">
+    <!-- Rotating outer diamond -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+      <polygon points="0,-42 42,0 0,42 -42,0" fill="none" stroke="#30363d" stroke-width="1.2" />
     </g>
-    <line x1="16" y1="36" x2="232" y2="36" stroke="#21262d" stroke-width="1" />
 
-    <!-- Metric 1 -->
-    <text x="16" y="56" fill="#7d8590" font-size="11" class="font-sans">AI Proxy Upstreams</text>
-    <text x="232" y="56" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="end" class="font-mono">8 Active Nodes</text>
+    <!-- Counter-rotating inner diamond -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="12s" repeatCount="indefinite" />
+      <polygon points="0,-26 26,0 0,26 -26,0" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8" />
+      <circle cx="0" cy="-26" r="2.5" fill="#38bdf8" />
+      <circle cx="26" cy="0" r="2.5" fill="#38bdf8" />
+      <circle cx="0" cy="26" r="2.5" fill="#38bdf8" />
+      <circle cx="-26" cy="0" r="2.5" fill="#38bdf8" />
+    </g>
 
-    <!-- Metric 2 -->
-    <text x="16" y="76" fill="#7d8590" font-size="11" class="font-sans">Cloud VFS Storage</text>
-    <text x="232" y="76" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="end" class="font-mono">5 TiB Mounted</text>
-
-    <!-- Metric 3 -->
-    <text x="16" y="96" fill="#7d8590" font-size="11" class="font-sans">Egress Networking</text>
-    <text x="232" y="96" fill="#10b981" font-size="11" font-weight="600" text-anchor="end" class="font-mono">WARP Anycast</text>
-
-    <!-- Metric 4 -->
-    <text x="16" y="116" fill="#7d8590" font-size="11" class="font-sans">Database Engine</text>
-    <text x="232" y="116" fill="#c084fc" font-size="11" font-weight="600" text-anchor="end" class="font-mono">SQLite WAL 64M</text>
+    <!-- Center core -->
+    <circle cx="0" cy="0" r="5" fill="#38bdf8">
+      <animate attributeName="r" values="4;6.5;4" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite" />
+    </circle>
   </g>
 </svg>

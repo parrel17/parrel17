@@ -9,25 +9,25 @@
     <!-- Animated Shimmer Beam for Cards -->
     <linearGradient id="laserCyan" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="laserEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#10b981" stop-opacity="0" />
-      <stop offset="50%" stop-color="#10b981" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="laserPurple" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#a855f7" stop-opacity="0" />
-      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
     </linearGradient>
 
     <linearGradient id="laserAmber" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
-      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.7" />
       <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
     </linearGradient>
 
@@ -55,7 +55,7 @@
     .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
   </style>
 
-  <!-- ==================== CARD 1: 9ROUTER AI (Top-Left) ==================== -->
+  <!-- ==================== CARD 1: 9ROUTER (Top-Left) ==================== -->
   <g transform="translate(0, 0)">
     <rect x="0" y="0" width="438" height="208" rx="12" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" />
     
@@ -76,8 +76,8 @@
     </g>
 
     <!-- Title & Animated Badge -->
-    <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">9Router AI Gateway</text>
-    <rect x="78" y="48" width="128" height="18" rx="9" fill="#0d1117" stroke="#238636" stroke-width="1" />
+    <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">9Router Gateway</text>
+    <rect x="78" y="48" width="108" height="18" rx="9" fill="#0d1117" stroke="#238636" stroke-width="1" />
     
     <!-- Animated Ping Dot -->
     <circle cx="86" cy="57" r="3" fill="#2ea043" />
@@ -86,25 +86,25 @@
       <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
     </circle>
     
-    <text x="96" y="61" fill="#7ee787" font-size="10" font-weight="600" class="font-mono">8 NODES • FILL-FIRST</text>
+    <text x="96" y="61" fill="#7ee787" font-size="10" font-weight="600" class="font-mono">REVERSE PROXY</text>
 
     <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">High-throughput proxy orchestrating multi-account upstream</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">APIs with Cloudflare WARP mesh and automated failover.</text>
+    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">High-concurrency API routing proxy with dynamic request</text>
+    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">hedging, automated upstream failover, and low-latency transport.</text>
 
     <!-- Tech Badges -->
     <g transform="translate(24, 150)">
       <rect x="0" y="0" width="68" height="22" rx="6" fill="#1f242c" />
       <text x="34" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Node.js</text>
       
-      <rect x="76" y="0" width="88" height="22" rx="6" fill="#1f242c" />
-      <text x="120" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">WARP Mesh</text>
+      <rect x="76" y="0" width="82" height="22" rx="6" fill="#1f242c" />
+      <text x="117" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">TypeScript</text>
       
-      <rect x="172" y="0" width="62" height="22" rx="6" fill="#1f242c" />
-      <text x="203" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">SOCKS5</text>
+      <rect x="166" y="0" width="62" height="22" rx="6" fill="#1f242c" />
+      <text x="197" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">SOCKS5</text>
       
-      <rect x="242" y="0" width="68" height="22" rx="6" fill="#1f242c" />
-      <text x="276" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Next.js</text>
+      <rect x="236" y="0" width="68" height="22" rx="6" fill="#1f242c" />
+      <text x="270" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Next.js</text>
     </g>
   </g>
 
@@ -127,7 +127,7 @@
 
     <!-- Title & Animated Badge -->
     <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">Nexa Movie Engine</text>
-    <rect x="78" y="48" width="134" height="18" rx="9" fill="#0d1117" stroke="#1f6feb" stroke-width="1" />
+    <rect x="78" y="48" width="138" height="18" rx="9" fill="#0d1117" stroke="#1f6feb" stroke-width="1" />
     
     <circle cx="86" cy="57" r="3" fill="#388bfd" />
     <circle cx="86" cy="57" r="3" fill="none" stroke="#388bfd" stroke-width="1">
@@ -135,11 +135,11 @@
       <animate attributeName="opacity" values="1;0;1" dur="2.2s" repeatCount="indefinite" />
     </circle>
     
-    <text x="96" y="61" fill="#79c0ff" font-size="10" font-weight="600" class="font-mono">5 TiB VFS MOUNTED</text>
+    <text x="96" y="61" fill="#79c0ff" font-size="10" font-weight="600" class="font-mono">STREAMING PLATFORM</text>
 
     <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Cloud VFS media platform with custom HLS transmuxing,</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">sub-second audio sync, and automated TMDB ingest pipeline.</text>
+    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Cloud media streaming web platform featuring custom HLS</text>
+    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">transmuxing, sub-second audio sync, and automated TMDB pipeline.</text>
 
     <!-- Tech Badges -->
     <g transform="translate(24, 150)">
@@ -177,7 +177,7 @@
 
     <!-- Title & Animated Badge -->
     <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">Nexa Finance Core</text>
-    <rect x="78" y="48" width="138" height="18" rx="9" fill="#0d1117" stroke="#8957e5" stroke-width="1" />
+    <rect x="78" y="48" width="124" height="18" rx="9" fill="#0d1117" stroke="#8957e5" stroke-width="1" />
     
     <circle cx="86" cy="57" r="3" fill="#a371f7" />
     <circle cx="86" cy="57" r="3" fill="none" stroke="#a371f7" stroke-width="1">
@@ -185,11 +185,11 @@
       <animate attributeName="opacity" values="1;0;1" dur="2.5s" repeatCount="indefinite" />
     </circle>
     
-    <text x="96" y="61" fill="#d2a8ff" font-size="10" font-weight="600" class="font-mono">SQLITE WAL • 64M CACHE</text>
+    <text x="96" y="61" fill="#d2a8ff" font-size="10" font-weight="600" class="font-mono">PERSONAL LEDGER</text>
 
     <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">High-performance transactional personal expense engine</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">with transient OTP verification and zero external telemetry.</text>
+    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Clean personal finance application with high-performance</text>
+    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">SQLite storage, transient OTP verification, and zero telemetry.</text>
 
     <!-- Tech Badges -->
     <g transform="translate(24, 150)">
@@ -228,7 +228,7 @@
 
     <!-- Title & Animated Badge -->
     <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">Astra Automation Fleet</text>
-    <rect x="78" y="48" width="128" height="18" rx="9" fill="#0d1117" stroke="#da3633" stroke-width="1" />
+    <rect x="78" y="48" width="134" height="18" rx="9" fill="#0d1117" stroke="#da3633" stroke-width="1" />
     
     <circle cx="86" cy="57" r="3" fill="#f85149" />
     <circle cx="86" cy="57" r="3" fill="none" stroke="#f85149" stroke-width="1">
@@ -236,11 +236,11 @@
       <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
     </circle>
     
-    <text x="96" y="61" fill="#ff7b72" font-size="10" font-weight="600" class="font-mono">PM2 MULTI-BOT</text>
+    <text x="96" y="61" fill="#ff7b72" font-size="10" font-weight="600" class="font-mono">EVENT MICROSERVICE</text>
 
     <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Event-driven Discord microservices orchestrating autonomous</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">35s QRIS payment verification and cluster health polling.</text>
+    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Modular event-driven microservices orchestrating automated</text>
+    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">QRIS payment verification, Discord gateways, and health polling.</text>
 
     <!-- Tech Badges -->
     <g transform="translate(24, 150)">
