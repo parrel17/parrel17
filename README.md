@@ -1,33 +1,27 @@
-<div align="center">
-
-<img src="assets/header.svg" width="100%" alt="Farrel Athallah - Systems Architecture & Engineering" />
-
-<br /><br />
-
 <p align="center">
-  <a href="https://nexalabs.ai.id"><img src="https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=cloudflare&logoColor=38bdf8" alt="Portfolio" /></a>
-  &nbsp;
-  <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-0A0A0A?style=for-the-badge&logo=discord&logoColor=38bdf8" alt="Discord" /></a>
-  &nbsp;
-  <a href="mailto:parrellzzz7@gmail.com"><img src="https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=38bdf8" alt="Email" /></a>
+  <img src="assets/hero.gif" width="100%" alt="Farrel Athallah // Systems Architect & Distributed Backend" />
 </p>
 
-</div>
+<p align="center">
+  <a href="https://nexalabs.ai.id"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=cloudflare&logoColor=38bdf8" alt="Portfolio" /></a>
+  <a href="https://discord.com/users/1536349600921817200"><img src="https://img.shields.io/badge/Discord-0d1117?style=for-the-badge&logo=discord&logoColor=38bdf8" alt="Discord" /></a>
+  <a href="mailto:parrellzzz7@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=38bdf8" alt="Email" /></a>
+</p>
 
 <br />
 
-### 🛰️ The Engineering Fleet
+<p align="center">
+  <img src="assets/console.gif" width="100%" alt="vps-nexa // runtime telemetry & systems console" />
+</p>
 
-<img src="assets/fleet_architecture.svg" width="100%" alt="Engineering & Systems Fleet Architecture" />
+<br />
 
-<br /><br />
+<p align="center">
+  <img src="assets/github-snake-dark.svg" width="98%" alt="Contribution Graph // Ice Cyan Snake Animation" />
+</p>
 
-### ⚡ Core Technologies & Principles
+<br />
 
-<img src="assets/tech_stack.svg" width="100%" alt="Core Technical Capabilities" />
-
-<br /><br />
-
-<div align="center">
-  <sub>Built with relentless precision &bull; Minimalist Luxury Architecture &bull; Farrel Athallah</sub>
-</div>
+<p align="center">
+  <img src="assets/footer.gif" width="100%" alt="Typed in turn: Building the fleet, one system at a time. Zero slop. Ruthless precision. Clean code." />
+</p>
