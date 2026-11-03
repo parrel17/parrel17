@@ -1,17 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="100%" height="100">
   <defs>
     <linearGradient id="techBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161b22" />
-      <stop offset="100%" stop-color="#0d1117" />
+      <stop offset="0%" stop-color="#141922" />
+      <stop offset="100%" stop-color="#0c0f16" />
+    </linearGradient>
+
+    <!-- Animated Shimmer -->
+    <linearGradient id="techSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </linearGradient>
   </defs>
 
   <style>
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Helvetica, Arial, sans-serif; }
-    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
   </style>
 
   <rect x="1" y="1" width="898" height="98" rx="12" fill="url(#techBg)" stroke="#30363d" stroke-width="1.2" />
+
+  <!-- Animated Bottom Line -->
+  <line x1="20" y1="98" x2="200" y2="98" stroke="url(#techSweep)" stroke-width="2">
+    <animate attributeName="x1" values="-200;900" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="0;1100" dur="5s" repeatCount="indefinite" />
+  </line>
 
   <!-- Column 1: Core Languages -->
   <g transform="translate(32, 22)">
