@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="100%" height="100">
+  <defs>
+    <linearGradient id="techBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+
+  <rect x="1" y="1" width="898" height="98" rx="12" fill="url(#techBg)" stroke="#30363d" stroke-width="1.2" />
+
+  <!-- Column 1: Core Languages -->
+  <g transform="translate(32, 22)">
+    <text x="0" y="14" fill="#8b949e" font-size="11" font-weight="600" class="font-mono">LANGUAGES &amp; RUNTIMES</text>
+    <text x="0" y="44" fill="#f0f6fc" font-size="13" font-weight="500" class="font-sans">Python • TypeScript • Go • Node.js</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="320" y1="20" x2="320" y2="80" stroke="#21262d" stroke-width="1" />
+
+  <!-- Column 2: Systems & Edge -->
+  <g transform="translate(344, 22)">
+    <text x="0" y="14" fill="#8b949e" font-size="11" font-weight="600" class="font-mono">INFRASTRUCTURE &amp; EDGE</text>
+    <text x="0" y="44" fill="#f0f6fc" font-size="13" font-weight="500" class="font-sans">Linux • Cloudflare WARP • Nginx • Docker</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="640" y1="20" x2="640" y2="80" stroke="#21262d" stroke-width="1" />
+
+  <!-- Column 3: Storage & Databases -->
+  <g transform="translate(664, 22)">
+    <text x="0" y="14" fill="#8b949e" font-size="11" font-weight="600" class="font-mono">STORAGE &amp; DATA</text>
+    <text x="0" y="44" fill="#f0f6fc" font-size="13" font-weight="500" class="font-sans">SQLite WAL • Redis • Rclone VFS</text>
+  </g>
+</svg>

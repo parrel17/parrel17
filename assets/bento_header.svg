@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="180">
+  <defs>
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#30363d" />
+    </linearGradient>
+    <linearGradient id="avatarGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="898" height="178" rx="14" fill="url(#headerBg)" stroke="url(#borderGrad)" stroke-width="1.2" />
+
+  <!-- Left: Profile Info -->
+  <g transform="translate(36, 32)">
+    <!-- Status Pill -->
+    <rect x="0" y="0" width="132" height="24" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <circle cx="12" cy="12" r="4" fill="#38bdf8" />
+    <text x="24" y="16" fill="#7dd3fc" font-size="11" font-weight="600" class="font-mono">ONLINE // FLEET</text>
+
+    <!-- Name & Title -->
+    <text x="0" y="58" fill="#f0f6fc" font-size="28" font-weight="700" letter-spacing="-0.5" class="font-sans">Farrel Athallah</text>
+    <text x="0" y="82" fill="#8b949e" font-size="14" font-weight="500" class="font-sans">Systems &amp; Backend Software Engineer</text>
+    <text x="0" y="104" fill="#6e7681" font-size="12" font-weight="400" class="font-sans">Engineering distributed AI routing fleets, cloud VFS streaming engines &amp; transactional backends.</text>
+  </g>
+
+  <!-- Right: Architecture Metric Badge -->
+  <g transform="translate(620, 28)">
+    <rect x="0" y="0" width="244" height="124" rx="10" fill="#0d1117" stroke="#21262d" stroke-width="1" />
+    
+    <!-- Header of mini-card -->
+    <text x="16" y="24" fill="#8b949e" font-size="11" font-weight="600" class="font-mono">INFRASTRUCTURE STATUS</text>
+    <line x1="16" y1="34" x2="228" y2="34" stroke="#21262d" stroke-width="1" />
+
+    <!-- Metric 1 -->
+    <text x="16" y="54" fill="#7d8590" font-size="11" class="font-sans">Active Proxy Nodes</text>
+    <text x="228" y="54" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="end" class="font-mono">8 Google AI</text>
+
+    <!-- Metric 2 -->
+    <text x="16" y="74" fill="#7d8590" font-size="11" class="font-sans">Mounted VFS Storage</text>
+    <text x="228" y="74" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="end" class="font-mono">5 TiB Cloud</text>
+
+    <!-- Metric 3 -->
+    <text x="16" y="94" fill="#7d8590" font-size="11" class="font-sans">Egress Mesh</text>
+    <text x="228" y="94" fill="#10b981" font-size="11" font-weight="600" text-anchor="end" class="font-mono">WARP Anycast</text>
+
+    <!-- Metric 4 -->
+    <text x="16" y="114" fill="#7d8590" font-size="11" class="font-sans">Cluster Runtime</text>
+    <text x="228" y="114" fill="#f0f6fc" font-size="11" font-weight="600" text-anchor="end" class="font-mono">Linux 6.8 x86</text>
+  </g>
+</svg>
