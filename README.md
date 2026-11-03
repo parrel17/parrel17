@@ -14,8 +14,4 @@
 
 <img src="assets/bento_grid.svg" width="100%" alt="Featured Systems Architecture" />
 
-<br /><br />
-
-<img src="assets/bento_tech.svg" width="100%" alt="Technical Capabilities &amp; Stack" />
-
 </div>
