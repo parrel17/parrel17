@@ -53,7 +53,7 @@
       <path d="M0,0 L-120,0"/><path d="M0,0 L-102,-60"/><path d="M0,0 L-58,-102"/><path d="M0,0 L0,-120"/>
       <path d="M-46,0 A46,46 0 0 0 0,-46"/><path d="M-86,0 A86,86 0 0 0 0,-86"/>
     </g>
-    <rect x="22" y="20" width="42" height="42" rx="10" fill="#060D1A" stroke="#E62429" stroke-opacity="0.6" stroke-width="1.1"/>
+    <circle cx="43" cy="41" r="22" fill="none" stroke="#E62429" stroke-width="1.2"><animate attributeName="r" values="20;34" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/></circle><rect x="22" y="20" width="42" height="42" rx="10" fill="#060D1A" stroke="#E62429" stroke-opacity="0.6" stroke-width="1.1"/>
     <g transform="translate(31,29)" stroke="#E62429" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="2" y="4" width="20" height="16" rx="2"/><polygon points="10,9 15,12 10,15" fill="#E62429"/>
     </g>
@@ -80,7 +80,7 @@
       <path d="M0,0 L-96,0"/><path d="M0,0 L-82,-48"/><path d="M0,0 L-46,-82"/><path d="M0,0 L0,-96"/>
       <path d="M-38,0 A38,38 0 0 0 0,-38"/><path d="M-70,0 A70,70 0 0 0 0,-70"/>
     </g>
-    <rect x="22" y="20" width="42" height="42" rx="10" fill="#060D1A" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.1"/>
+    <circle cx="43" cy="41" r="22" fill="none" stroke="#38bdf8" stroke-width="1.2"><animate attributeName="r" values="20;32" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.6s" repeatCount="indefinite"/></circle><rect x="22" y="20" width="42" height="42" rx="10" fill="#060D1A" stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.1"/>
     <g transform="translate(31,29)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="3" y="5" width="18" height="14" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="17" cy="14" r="1.5" fill="#38bdf8"/>
     </g>
@@ -107,7 +107,7 @@
       <path d="M0,0 L-96,0"/><path d="M0,0 L-82,-48"/><path d="M0,0 L-46,-82"/><path d="M0,0 L0,-96"/>
       <path d="M-38,0 A38,38 0 0 0 0,-38"/><path d="M-70,0 A70,70 0 0 0 0,-70"/>
     </g>
-    <rect x="22" y="20" width="42" height="42" rx="10" fill="#060D1A" stroke="#E62429" stroke-opacity="0.55" stroke-width="1.1"/>
+    <circle cx="43" cy="41" r="22" fill="none" stroke="#E62429" stroke-width="1.2"><animate attributeName="r" values="20;32" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.2s" repeatCount="indefinite"/></circle><rect x="22" y="20" width="42" height="42" rx="10" fill="#060D1A" stroke="#E62429" stroke-opacity="0.55" stroke-width="1.1"/>
     <g transform="translate(31,29)" stroke="#E62429" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="3" y="9" width="18" height="11" rx="2"/><circle cx="8" cy="14" r="1.5" fill="#E62429"/><circle cx="16" cy="14" r="1.5" fill="#E62429"/><path d="M8 5a4 4 0 0 1 8 0v4H8V5z"/>
     </g>
