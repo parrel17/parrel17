@@ -20,7 +20,7 @@
 
 <br /><br />
 
-<img src="assets/bento_grid_v6.svg" width="100%" alt="Nexa Systems Architecture" />
+<img src="assets/bento_grid_v7.svg" width="100%" alt="Nexa Systems Architecture" />
 
 <br /><br />
 

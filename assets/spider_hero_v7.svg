@@ -89,10 +89,12 @@
 
   <!-- Outer Frame + Animated Top Laser -->
   <rect x="0.5" y="0.5" width="919" height="499" rx="17.5" fill="none" stroke="#17365C"/>
-  <line x1="20" y1="1" x2="260" y2="1" stroke="url(#topLaser)" stroke-width="2.2">
-    <animate attributeName="x1" values="-260;920" dur="3.8s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="0;1180" dur="3.8s" repeatCount="indefinite"/>
-  </line>
+  <g clip-path="url(#card-clip)">
+    <line x1="20" y1="1" x2="260" y2="1" stroke="url(#topLaser)" stroke-width="2.2">
+      <animate attributeName="x1" values="-260;920" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1180" dur="3.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
 
   <!-- LEFT COLUMN: Editorial Hero + Stack Chips + Live Wave Contribution Matrix -->
   <!-- Status Pill -->
