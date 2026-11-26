@@ -85,7 +85,7 @@
 
   <!-- Right Pane Readout -->
   <text x="400" y="64" fill="#EAF2FF" font-size="16" font-weight="800" letter-spacing="1.2" font-family="Inter Display, Inter, ui-sans-serif, sans-serif">SPIDER-SENSE</text>
-  <text x="536" y="64" fill="#38bdf8" font-size="10.5" font-weight="600" letter-spacing="1" font-family="JetBrains Mono, ui-monospace, monospace">ID // EARTH-616</text>
+  <text x="892" y="64" text-anchor="end" fill="#38bdf8" font-size="10.5" font-weight="600" letter-spacing="1" font-family="JetBrains Mono, ui-monospace, monospace">ID // EARTH-616</text>
   <line x1="400" y1="74" x2="892" y2="74" stroke="#17365C"/>
 
     <g opacity="1">
@@ -140,10 +140,8 @@
   </g>
 
   <!-- Live Command Prompt + Progress Scanner -->
-  <text x="400" y="314" fill="#38bdf8" font-size="11.5" font-family="JetBrains Mono, ui-monospace, monospace">parrel17@nexa-labs</text>
-  <text x="530" y="314" fill="#8B9BB4" font-size="11.5" font-family="JetBrains Mono, ui-monospace, monospace">:~$</text>
-  <text x="558" y="314" fill="#EAF2FF" font-size="11.5" font-family="JetBrains Mono, ui-monospace, monospace">./deploy --spider-verse</text>
-  <rect x="738" y="303" width="7" height="13" fill="#E62429">
+  <text x="400" y="314" font-size="11.5" font-family="JetBrains Mono, ui-monospace, monospace"><tspan fill="#38bdf8">parrel17@nexa-labs</tspan><tspan fill="#8B9BB4">:~$ </tspan><tspan fill="#EAF2FF">./deploy --spider-verse</tspan></text>
+  <rect x="728" y="303" width="7" height="13" fill="#E62429">
     <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
   </rect>
 

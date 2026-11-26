@@ -16,11 +16,11 @@
 
 <br />
 
-<img src="assets/spider_terminal_v7.svg" width="100%" alt="Spider-Verse Developer Terminal" />
+<img src="assets/spider_terminal_v8.svg" width="100%" alt="Spider-Verse Developer Terminal" />
 
 <br /><br />
 
-<img src="assets/bento_grid_v7.svg" width="100%" alt="Nexa Systems Architecture" />
+<img src="assets/bento_grid_v8.svg" width="100%" alt="Nexa Systems Architecture" />
 
 <br /><br />
 
