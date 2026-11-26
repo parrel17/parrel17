@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" role="img" aria-label="Farrel Athallah — Software Engineer, Systems &amp; Backend">
+  <defs>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05070D"/>
+      <stop offset="55%" stop-color="#081224"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <radialGradient id="spiderAura" gradientUnits="userSpaceOnUse" cx="450" cy="94" r="130">
+      <stop offset="0%" stop-color="#E62429" stop-opacity="0.32"/>
+      <stop offset="55%" stop-color="#E62429" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E62429" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="horizonRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E62429" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#E62429" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="borderPulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d">
+        <animate attributeName="stop-color" values="#30363d;#E62429;#38bdf8;#30363d" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#E62429">
+        <animate attributeName="stop-color" values="#E62429;#38bdf8;#30363d;#E62429" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#30363d">
+        <animate attributeName="stop-color" values="#30363d;#38bdf8;#E62429;#30363d" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="topLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E62429" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF3340" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="frameClip">
+      <rect x="1" y="1" width="898" height="318" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .font-display { font-family: "Inter Display", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .font-mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+
+  <g clip-path="url(#frameClip)">
+    <!-- Sky background -->
+    <rect width="900" height="320" fill="url(#skyBg)"/>
+
+    <!-- Faint background web grid -->
+    <g stroke="#EAF2FF" stroke-opacity="0.045" stroke-width="0.9" fill="none">
+      <path d="M450,94 Q220,38 0,0"/>
+      <path d="M450,94 Q680,38 900,0"/>
+      <path d="M450,94 Q190,170 0,320"/>
+      <path d="M450,94 Q710,170 900,320"/>
+      <path d="M450,94 L450,0"/>
+      <path d="M450,94 L0,140"/>
+      <path d="M450,94 L900,140"/>
+      <circle cx="450" cy="94" r="64"/>
+      <circle cx="450" cy="94" r="128"/>
+      <circle cx="450" cy="94" r="210"/>
+      <circle cx="450" cy="94" r="300"/>
+    </g>
+
+    <!-- Twinkling stars -->
+    <g fill="#EAF2FF">
+      <circle cx="72" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="168" cy="64" r="1.1"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="278" cy="28" r="1.4"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.0s" repeatCount="indefinite"/></circle>
+      <circle cx="352" cy="54" r="1.0"><animate attributeName="opacity" values="0.8;0.15;0.8" dur="3.3s" repeatCount="indefinite"/></circle>
+      <circle cx="566" cy="34" r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="645" cy="62" r="1.5"><animate attributeName="opacity" values="1;0.25;1" dur="3.6s" repeatCount="indefinite"/></circle>
+      <circle cx="748" cy="30" r="1.3"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="4.2s" repeatCount="indefinite"/></circle>
+      <circle cx="835" cy="78" r="1.1"><animate attributeName="opacity" values="0.95;0.2;0.95" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="52" cy="112" r="1.2"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="4.4s" repeatCount="indefinite"/></circle>
+      <circle cx="852" cy="138" r="1.2"><animate attributeName="opacity" values="0.85;0.2;0.85" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="145" cy="158" r="1.0"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.7s" repeatCount="indefinite"/></circle>
+      <circle cx="790" cy="176" r="1.0"><animate attributeName="opacity" values="0.9;0.25;0.9" dur="4.1s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Rotating radar web behind spider emblem -->
+    <g transform="translate(450, 94)">
+      <circle cx="0" cy="0" r="126" fill="url(#spiderAura)"/>
+
+      <!-- Outer rotating web -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="44s" repeatCount="indefinite"/>
+        <g stroke="#EAF2FF" stroke-opacity="0.11" stroke-width="0.85" fill="none">
+          <line x1="0" y1="0" x2="0" y2="-112"/>
+          <line x1="0" y1="0" x2="97" y2="-56"/>
+          <line x1="0" y1="0" x2="112" y2="0"/>
+          <line x1="0" y1="0" x2="97" y2="56"/>
+          <line x1="0" y1="0" x2="0" y2="112"/>
+          <line x1="0" y1="0" x2="-97" y2="56"/>
+          <line x1="0" y1="0" x2="-112" y2="0"/>
+          <line x1="0" y1="0" x2="-97" y2="-56"/>
+          <circle cx="0" cy="0" r="30"/>
+          <circle cx="0" cy="0" r="58"/>
+          <circle cx="0" cy="0" r="88"/>
+        </g>
+      </g>
+
+      <!-- Counter-rotating dashed targeting ring -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="28s" repeatCount="indefinite"/>
+        <circle cx="0" cy="0" r="44" fill="none" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="6 8"/>
+      </g>
+
+      <!-- Dual Spider-Sense pulse rings -->
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#FF3340" stroke-width="1.8">
+        <animate attributeName="r" values="18;74" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.85;0" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#38bdf8" stroke-width="1.2">
+        <animate attributeName="r" values="18;74" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.55;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Chromatic glitch ghost (cyan) -->
+      <g opacity="0.45">
+        <animateTransform attributeName="transform" type="translate" values="0,0;-1.8,0.6;0,0;0,0;1.5,-0.5;0,0" keyTimes="0;0.04;0.08;0.68;0.71;1" dur="5.5s" repeatCount="indefinite"/>
+        <path d="M0,-17 L3.2,-12 L2.5,-7 L5.5,-3 L4.5,6 L0,15 L-4.5,6 L-5.5,-3 L-2.5,-7 L-3.2,-12 Z" fill="#38bdf8"/>
+        <g stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M-3.5,-8 L-12,-18 L-18,-27"/>
+          <path d="M-5,-4 L-17,-10 L-26,-16"/>
+          <path d="M-5,1 L-18,4 L-27,12"/>
+          <path d="M-3.5,6 L-12,15 L-17,26"/>
+          <path d="M3.5,-8 L12,-18 L18,-27"/>
+          <path d="M5,-4 L17,-10 L26,-16"/>
+          <path d="M5,1 L18,4 L27,12"/>
+          <path d="M3.5,6 L12,15 L17,26"/>
+        </g>
+      </g>
+
+      <!-- Main Spider-Man Emblem (sharp geometric silhouette) -->
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="1;1.04;1" dur="2.4s" repeatCount="indefinite"/>
+        <path d="M0,-17 L3.2,-12 L2.5,-7 L5.5,-3 L4.5,6 L0,15 L-4.5,6 L-5.5,-3 L-2.5,-7 L-3.2,-12 Z" fill="#E62429"/>
+        <g stroke="#E62429" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M-3.5,-8 L-12,-18 L-18,-27"/>
+          <path d="M-5,-4 L-17,-10 L-26,-16"/>
+          <path d="M-5,1 L-18,4 L-27,12"/>
+          <path d="M-3.5,6 L-12,15 L-17,26"/>
+          <path d="M3.5,-8 L12,-18 L18,-27"/>
+          <path d="M5,-4 L17,-10 L26,-16"/>
+          <path d="M5,1 L18,4 L27,12"/>
+          <path d="M3.5,6 L12,15 L17,26"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Corner Web Accents -->
+    <g fill="none" stroke="#EAF2FF" stroke-opacity="0.22" stroke-width="1">
+      <g transform="translate(14, 14)">
+        <path d="M0,26 L26,0"/><path d="M0,18 L18,0"/><path d="M0,10 L10,0"/>
+        <path d="M26,0 A28,28 0 0 1 0,26"/>
+      </g>
+      <g transform="translate(860, 14)">
+        <path d="M0,0 L26,26"/><path d="M8,0 L26,18"/><path d="M16,0 L26,10"/>
+        <path d="M0,0 A28,28 0 0 0 26,26"/>
+      </g>
+    </g>
+
+    <!-- Swinging tiny spider across upper sky -->
+    <g opacity="0.55">
+      <g>
+        <animateMotion dur="16s" repeatCount="indefinite" rotate="auto" path="M90,48 Q260,16 450,30 Q580,40 690,26"/>
+        <line x1="0" y1="0" x2="0" y2="-28" stroke="#EAF2FF" stroke-opacity="0.35" stroke-width="0.7"/>
+        <ellipse cx="0" cy="0" rx="2.4" ry="3.4" fill="#E62429"/>
+        <circle cx="0" cy="-4.2" r="1.5" fill="#E62429"/>
+        <g stroke="#E62429" stroke-width="0.7" fill="none" stroke-linecap="round">
+          <path d="M-2,-1.5 L-6,-4"/><path d="M-2,0.5 L-6.5,2.5"/>
+          <path d="M2,-1.5 L6,-4"/><path d="M2,0.5 L6.5,2.5"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Top-right HUD Status Pill -->
+    <g transform="translate(728, 20)">
+      <rect x="0" y="0" width="146" height="22" rx="11" fill="#0d1117" fill-opacity="0.85" stroke="#30363d" stroke-width="1"/>
+      <circle cx="13" cy="11" r="3.2" fill="#2BD576">
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="13" cy="11" r="3.2" fill="none" stroke="#2BD576" stroke-width="1">
+        <animate attributeName="r" values="3.2;7.5;3.2" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0.8" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="24" y="14.5" fill="#9FB3CC" font-size="9.5" font-weight="600" letter-spacing="1.4" class="font-mono">SPIDER-SENSE ON</text>
+    </g>
+
+    <!-- Horizon Glow & City Skyline (placed behind typography with subtle depth) -->
+    <rect x="0" y="220" width="900" height="100" fill="url(#horizonRed)"/>
+
+    <g fill="#0A1525">
+      <rect x="0" y="276" width="38" height="44"/>
+      <rect x="46" y="288" width="28" height="32"/>
+      <rect x="82" y="264" width="46" height="56"/>
+      <rect x="136" y="282" width="26" height="38"/>
+      <rect x="170" y="268" width="44" height="52"/>
+      <rect x="222" y="286" width="30" height="34"/>
+      <rect x="260" y="258" width="50" height="62"/>
+      <rect x="318" y="278" width="32" height="42"/>
+      <rect x="358" y="288" width="26" height="32"/>
+      <rect x="392" y="268" width="44" height="52"/>
+      <rect x="444" y="284" width="30" height="36"/>
+      <rect x="482" y="262" width="46" height="58"/>
+      <rect x="536" y="286" width="28" height="34"/>
+      <rect x="572" y="272" width="48" height="48"/>
+      <rect x="628" y="282" width="30" height="38"/>
+      <rect x="666" y="264" width="44" height="56"/>
+      <rect x="718" y="284" width="28" height="36"/>
+      <rect x="754" y="270" width="44" height="50"/>
+      <rect x="806" y="282" width="30" height="38"/>
+      <rect x="844" y="268" width="56" height="52"/>
+    </g>
+
+    <!-- Blinking skyline windows -->
+    <g fill="#EAF2FF">
+      <rect x="90" y="272" width="3.5" height="4.5"><animate attributeName="opacity" values="0.25;0.95;0.25" dur="2.8s" repeatCount="indefinite"/></rect>
+      <rect x="98" y="272" width="3.5" height="4.5"><animate attributeName="opacity" values="0.9;0.25;0.9" dur="3.4s" begin="0.5s" repeatCount="indefinite"/></rect>
+      <rect x="178" y="276" width="3.5" height="4.5"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.1s" begin="0.9s" repeatCount="indefinite"/></rect>
+      <rect x="268" y="266" width="3.5" height="4.5"><animate attributeName="opacity" values="0.95;0.2;0.95" dur="2.7s" begin="0.3s" repeatCount="indefinite"/></rect>
+      <rect x="276" y="266" width="3.5" height="4.5"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="3.8s" begin="1.1s" repeatCount="indefinite"/></rect>
+      <rect x="400" y="276" width="3.5" height="4.5"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.9s" begin="0.4s" repeatCount="indefinite"/></rect>
+      <rect x="490" y="270" width="3.5" height="4.5"><animate attributeName="opacity" values="0.25;0.95;0.25" dur="3.3s" begin="1.2s" repeatCount="indefinite"/></rect>
+      <rect x="580" y="280" width="3.5" height="4.5"><animate attributeName="opacity" values="0.9;0.25;0.9" dur="2.6s" begin="0.7s" repeatCount="indefinite"/></rect>
+      <rect x="674" y="272" width="3.5" height="4.5"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="3.5s" begin="0.2s" repeatCount="indefinite"/></rect>
+      <rect x="762" y="278" width="3.5" height="4.5"><animate attributeName="opacity" values="0.95;0.25;0.95" dur="3.0s" begin="1.4s" repeatCount="indefinite"/></rect>
+      <rect x="854" y="276" width="3.5" height="4.5"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <!-- Center Typography (visible immediately, subtle breathing pulse) -->
+    <g text-anchor="middle">
+      <text x="450" y="152" fill="#FF3340" font-size="11.5" font-weight="600" letter-spacing="4.5" class="font-mono">
+        PARREL17 // SYSTEMS &amp; BACKEND
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="450" y="202" fill="#F0F6FC" font-size="44" font-weight="800" letter-spacing="3.5" class="font-display">FARREL ATHALLAH</text>
+
+      <text x="450" y="232" fill="#9FB3CC" font-size="13.5" font-weight="500" letter-spacing="1.6" class="font-display">
+        Distributed Web Apps &#183; Streaming Engines &#183; Reverse Proxies
+      </text>
+    </g>
+
+    <!-- Animated Top Scanning Laser -->
+    <line x1="0" y1="1.5" x2="260" y2="1.5" stroke="url(#topLaser)" stroke-width="2.2">
+      <animate attributeName="x1" values="-260;900" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1160" dur="4.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Outer Card Frame -->
+  <rect x="1" y="1" width="898" height="318" rx="14" fill="none" stroke="url(#borderPulse)" stroke-width="1.3"/>
+</svg>
