@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/spider_hero_curtain.svg" width="100%" alt="Farrel Athallah — Spider-Verse GitHub Profile" />
+<img src="assets/spider_hero_v4.svg" width="100%" alt="Farrel Athallah — Spider-Verse GitHub Profile" />
 
 <br /><br />
 
@@ -10,13 +10,13 @@
   <a href="mailto:parrellzzz7@gmail.com"><img src="https://img.shields.io/badge/Email-060D1A?style=for-the-badge&amp;logo=gmail&amp;logoColor=38bdf8" alt="Email" /></a>
 </p>
 
-<img src="assets/web_divider.svg" width="100%" alt="Web Divider" />
+<img src="assets/web_divider.svg" width="100%" alt="Spider Web Divider" />
 
-<img src="assets/spider_terminal.svg" width="100%" alt="Self-typing Spider-Man ASCII Terminal" />
+<img src="assets/spider_terminal_v4.svg" width="100%" alt="Spider-Verse Developer Terminal" />
 
 <br /><br />
 
-<img src="assets/bento_grid.svg" width="100%" alt="Systems Architecture — Dot-Matrix Spider-Verse Bento" />
+<img src="assets/bento_grid_v4.svg" width="100%" alt="Systems Architecture — Dot-Matrix Spider-Verse Bento" />
 
 <br /><br />
 
