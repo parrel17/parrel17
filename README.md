@@ -1,20 +1,22 @@
 <div align="center">
 
-<img src="assets/spider_hero.svg" width="100%" alt="Farrel Athallah — Software Engineer, Systems &amp; Backend" />
+<img src="assets/spider_hero_curtain.svg" width="100%" alt="Farrel Athallah — Spider-Verse GitHub Profile" />
 
 <br /><br />
 
 <p align="center">
-  <a href="https://nexalabs.ai.id"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&amp;logo=cloudflare&amp;logoColor=E62429" alt="Portfolio" /></a>
-  <a href="https://discord.com/users/1536349600921817200"><img src="https://img.shields.io/badge/Discord-0d1117?style=for-the-badge&amp;logo=discord&amp;logoColor=38bdf8" alt="Discord" /></a>
-  <a href="mailto:parrellzzz7@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&amp;logo=gmail&amp;logoColor=E62429" alt="Email" /></a>
+  <a href="https://nexalabs.ai.id"><img src="https://img.shields.io/badge/Portfolio-060D1A?style=for-the-badge&amp;logo=cloudflare&amp;logoColor=38bdf8" alt="Portfolio" /></a>
+  <a href="https://discord.com/users/1536349600921817200"><img src="https://img.shields.io/badge/Discord-060D1A?style=for-the-badge&amp;logo=discord&amp;logoColor=E62429" alt="Discord" /></a>
+  <a href="mailto:parrellzzz7@gmail.com"><img src="https://img.shields.io/badge/Email-060D1A?style=for-the-badge&amp;logo=gmail&amp;logoColor=38bdf8" alt="Email" /></a>
 </p>
 
-<img src="assets/web_divider.svg" width="100%" alt="Spider web divider" />
+<img src="assets/web_divider.svg" width="100%" alt="Web Divider" />
 
-<br />
+<img src="assets/spider_terminal.svg" width="100%" alt="Self-typing Spider-Man ASCII Terminal" />
 
-<img src="assets/bento_grid.svg" width="100%" alt="Featured Systems Architecture" />
+<br /><br />
+
+<img src="assets/bento_grid.svg" width="100%" alt="Systems Architecture — Dot-Matrix Spider-Verse Bento" />
 
 <br /><br />
 
