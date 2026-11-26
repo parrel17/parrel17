@@ -1,260 +1,282 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="100%" height="440">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 492" width="100%" role="img" aria-label="Systems Architecture — Spider-Sense Bento Grid">
   <defs>
-    <!-- Background Gradient for Cards -->
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141922" />
-      <stop offset="100%" stop-color="#0c0f16" />
+    <linearGradient id="canvasBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#060D1A" />
+      <stop offset="100%" stop-color="#091326" />
     </linearGradient>
 
-    <!-- Animated Shimmer Beam for Cards -->
-    <linearGradient id="laserCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.7" />
+    <linearGradient id="cardSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B172A" />
+      <stop offset="100%" stop-color="#07101F" />
+    </linearGradient>
+
+    <linearGradient id="laserRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E62429" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FF3340" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#E62429" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="laserBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1976D2" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#1976D2" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E62429" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#E62429" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.24" />
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
-    </linearGradient>
-
-    <linearGradient id="laserEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0" />
-      <stop offset="50%" stop-color="#10b981" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
-    </linearGradient>
-
-    <linearGradient id="laserPurple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0" />
-      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
-    </linearGradient>
-
-    <linearGradient id="laserAmber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
-      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
-    </linearGradient>
-
-    <!-- Card Icon Glows -->
-    <radialGradient id="iconGlowCyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
     </radialGradient>
-    <radialGradient id="iconGlowEmerald" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0" />
-    </radialGradient>
-    <radialGradient id="iconGlowPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.0" />
-    </radialGradient>
-    <radialGradient id="iconGlowAmber" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.0" />
-    </radialGradient>
+
+    <clipPath id="outerClip">
+      <rect x="0.5" y="0.5" width="899" height="491" rx="14" />
+    </clipPath>
   </defs>
 
   <style>
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, Helvetica, Arial, sans-serif; }
-    .font-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .font-display { font-family: "Inter Display", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .font-mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   </style>
 
-  <!-- ==================== CARD 1: 9ROUTER (Top-Left) ==================== -->
-  <g transform="translate(0, 0)">
-    <rect x="0" y="0" width="438" height="208" rx="12" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" />
-    
-    <!-- Animated Top Edge Pulse -->
-    <line x1="20" y1="1" x2="160" y2="1" stroke="url(#laserCyan)" stroke-width="2">
-      <animate attributeName="x1" values="-150;440" dur="3.5s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="0;590" dur="3.5s" repeatCount="indefinite" />
-    </line>
+  <g clip-path="url(#outerClip)">
+    <!-- Outer Spider-Verse Canvas -->
+    <rect width="900" height="492" fill="url(#canvasBg)" />
 
-    <!-- Icon Container with Animated Glow -->
-    <rect x="24" y="22" width="42" height="42" rx="10" fill="url(#iconGlowCyan)" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1" />
-    <g transform="translate(33, 31)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="1" y="2" width="22" height="8" rx="2" />
-      <path d="M5 10v6M12 10v6M19 10v6" />
-      <circle cx="5" cy="18" r="2" fill="#38bdf8" />
-      <circle cx="12" cy="18" r="2" fill="#38bdf8" />
-      <circle cx="19" cy="18" r="2" fill="#38bdf8" />
+    <!-- Faint Spider-Web Network Geometry -->
+    <g stroke="#EAF2FF" stroke-opacity="0.045" stroke-width="1" fill="none">
+      <line x1="0" y1="0" x2="900" y2="492" />
+      <line x1="900" y1="0" x2="0" y2="492" />
+      <line x1="450" y1="0" x2="450" y2="492" />
+      <line x1="0" y1="265" x2="900" y2="265" />
+      <circle cx="450" cy="265" r="145" />
+      <circle cx="450" cy="265" r="275" />
+      <circle cx="450" cy="265" r="410" />
     </g>
 
-    <!-- Title & Animated Badge -->
-    <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">9Router Gateway</text>
-    <rect x="78" y="48" width="108" height="18" rx="9" fill="#0d1117" stroke="#238636" stroke-width="1" />
-    
-    <!-- Animated Ping Dot -->
-    <circle cx="86" cy="57" r="3" fill="#2ea043" />
-    <circle cx="86" cy="57" r="3" fill="none" stroke="#2ea043" stroke-width="1">
-      <animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
-    </circle>
-    
-    <text x="96" y="61" fill="#7ee787" font-size="10" font-weight="600" class="font-mono">REVERSE PROXY</text>
+    <!-- HUD Top Header -->
+    <g transform="translate(28, 30)">
+      <path d="M0,-8 L2,-4 L1.5,-1 L3.5,2 L2.5,6 L0,10 L-2.5,6 L-3.5,2 L-1.5,-1 L-2,-4 Z" fill="#E62429" />
+      <g stroke="#E62429" stroke-width="1.3" stroke-linecap="round" fill="none">
+        <path d="M-2.5,-3 L-8,-8" /><path d="M-3,0 L-10,-2" /><path d="M-3,3 L-9,7" />
+        <path d="M2.5,-3 L8,-8" /><path d="M3,0 L10,-2" /><path d="M3,3 L9,7" />
+      </g>
+    </g>
 
-    <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">High-concurrency API routing proxy with dynamic request</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">hedging, automated upstream failover, and low-latency transport.</text>
+    <text x="50" y="36" fill="#EAF2FF" font-size="16" font-weight="800" letter-spacing="2" class="font-display">SYSTEMS ARCHITECTURE</text>
+    <text x="292" y="35.5" fill="#7D8FA8" font-size="10.5" font-weight="600" letter-spacing="1.8" class="font-mono">// ACTIVE MISSIONS</text>
 
-    <!-- Tech Badges -->
-    <g transform="translate(24, 150)">
-      <rect x="0" y="0" width="68" height="22" rx="6" fill="#1f242c" />
-      <text x="34" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Node.js</text>
-      
-      <rect x="76" y="0" width="82" height="22" rx="6" fill="#1f242c" />
-      <text x="117" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">TypeScript</text>
-      
-      <rect x="166" y="0" width="62" height="22" rx="6" fill="#1f242c" />
-      <text x="197" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">SOCKS5</text>
-      
-      <rect x="236" y="0" width="68" height="22" rx="6" fill="#1f242c" />
-      <text x="270" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Next.js</text>
+    <!-- Right HUD Pill -->
+    <g transform="translate(744, 19)">
+      <rect x="0" y="0" width="138" height="22" rx="11" fill="#0A1424" stroke="#17365C" stroke-width="1" />
+      <circle cx="13" cy="11" r="3" fill="#2BD576">
+        <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="13" cy="11" r="3" fill="none" stroke="#2BD576" stroke-width="1">
+        <animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="24" y="14.5" fill="#9FB3CC" font-size="9.5" font-weight="600" letter-spacing="1.2" class="font-mono">4 NODES ONLINE</text>
+    </g>
+
+    <!-- ==================== CARD 1: 9ROUTER GATEWAY (Top-Left, Crimson) ==================== -->
+    <g transform="translate(18, 58)">
+      <rect x="0" y="0" width="423" height="198" rx="12" fill="url(#cardSurface)" stroke="#17365C" stroke-width="1.2" />
+      <rect x="1" y="0" width="421" height="2.5" rx="1.2" fill="#E62429" fill-opacity="0.85" />
+      <line x1="0" y1="1.2" x2="140" y2="1.2" stroke="url(#laserRed)" stroke-width="2.2">
+        <animate attributeName="x1" values="-140;423" dur="3.6s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="0;563" dur="3.6s" repeatCount="indefinite" />
+      </line>
+
+      <!-- Subtle bottom-right corner web -->
+      <g transform="translate(392, 167)" fill="none" stroke="#E62429" stroke-opacity="0.18" stroke-width="1">
+        <path d="M31,0 L0,31" /><path d="M31,10 L10,31" /><path d="M31,20 L20,31" />
+        <path d="M0,31 A31,31 0 0 1 31,0" />
+      </g>
+
+      <rect x="22" y="22" width="40" height="40" rx="10" fill="url(#glowRed)" stroke="#E62429" stroke-opacity="0.45" stroke-width="1" />
+      <g transform="translate(30, 30)" stroke="#FF3340" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="2" width="22" height="8" rx="2" />
+        <path d="M5 10v6M12 10v6M19 10v6" />
+        <circle cx="5" cy="18" r="2" fill="#FF3340" />
+        <circle cx="12" cy="18" r="2" fill="#FF3340" />
+        <circle cx="19" cy="18" r="2" fill="#FF3340" />
+      </g>
+
+      <text x="74" y="39" fill="#EAF2FF" font-size="16.5" font-weight="700" class="font-display">9Router Gateway</text>
+      <rect x="74" y="47" width="114" height="18" rx="9" fill="#180B10" stroke="#E62429" stroke-opacity="0.65" stroke-width="1" />
+      <circle cx="83" cy="56" r="2.8" fill="#FF3340" />
+      <circle cx="83" cy="56" r="2.8" fill="none" stroke="#FF3340" stroke-width="1">
+        <animate attributeName="r" values="2.8;6.8;2.8" dur="2.1s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.1s" repeatCount="indefinite" />
+      </circle>
+      <text x="93" y="59.5" fill="#FF7B82" font-size="9.5" font-weight="600" letter-spacing="0.8" class="font-mono">REVERSE PROXY</text>
+
+      <text x="22" y="94" fill="#9FB3CC" font-size="11.5" class="font-display">High-concurrency API routing proxy with dynamic request</text>
+      <text x="22" y="112" fill="#9FB3CC" font-size="11.5" class="font-display">hedging, automated upstream failover, and low-latency transport.</text>
+
+      <g transform="translate(22, 148)">
+        <rect x="0" y="0" width="66" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="33" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Node.js</text>
+
+        <rect x="74" y="0" width="80" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="114" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">TypeScript</text>
+
+        <rect x="162" y="0" width="60" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="192" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">SOCKS5</text>
+
+        <rect x="230" y="0" width="66" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="263" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Next.js</text>
+      </g>
+    </g>
+
+    <!-- ==================== CARD 2: NEXA MOVIE ENGINE (Top-Right, Cobalt Blue) ==================== -->
+    <g transform="translate(459, 58)">
+      <rect x="0" y="0" width="423" height="198" rx="12" fill="url(#cardSurface)" stroke="#17365C" stroke-width="1.2" />
+      <rect x="1" y="0" width="421" height="2.5" rx="1.2" fill="#1976D2" fill-opacity="0.9" />
+      <line x1="0" y1="1.2" x2="140" y2="1.2" stroke="url(#laserBlue)" stroke-width="2.2">
+        <animate attributeName="x1" values="-140;423" dur="4.1s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="0;563" dur="4.1s" repeatCount="indefinite" />
+      </line>
+
+      <g transform="translate(392, 167)" fill="none" stroke="#38bdf8" stroke-opacity="0.18" stroke-width="1">
+        <path d="M31,0 L0,31" /><path d="M31,10 L10,31" /><path d="M31,20 L20,31" />
+        <path d="M0,31 A31,31 0 0 1 31,0" />
+      </g>
+
+      <rect x="22" y="22" width="40" height="40" rx="10" fill="url(#glowBlue)" stroke="#38bdf8" stroke-opacity="0.45" stroke-width="1" />
+      <g transform="translate(30, 30)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="16" rx="3" />
+        <polygon points="10 8 16 11 10 14 10 8" fill="#38bdf8" />
+      </g>
+
+      <text x="74" y="39" fill="#EAF2FF" font-size="16.5" font-weight="700" class="font-display">Nexa Movie Engine</text>
+      <rect x="74" y="47" width="136" height="18" rx="9" fill="#09172B" stroke="#1976D2" stroke-opacity="0.75" stroke-width="1" />
+      <circle cx="83" cy="56" r="2.8" fill="#38bdf8" />
+      <circle cx="83" cy="56" r="2.8" fill="none" stroke="#38bdf8" stroke-width="1">
+        <animate attributeName="r" values="2.8;6.8;2.8" dur="2.3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.3s" repeatCount="indefinite" />
+      </circle>
+      <text x="93" y="59.5" fill="#7DD3FC" font-size="9.5" font-weight="600" letter-spacing="0.8" class="font-mono">STREAMING ENGINE</text>
+
+      <text x="22" y="94" fill="#9FB3CC" font-size="11.5" class="font-display">Cloud media streaming web platform featuring custom HLS</text>
+      <text x="22" y="112" fill="#9FB3CC" font-size="11.5" class="font-display">transmuxing, sub-second audio sync, and automated TMDB pipeline.</text>
+
+      <g transform="translate(22, 148)">
+        <rect x="0" y="0" width="60" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="30" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Python</text>
+
+        <rect x="68" y="0" width="84" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="110" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Rclone VFS</text>
+
+        <rect x="160" y="0" width="84" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="202" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">HLS Stream</text>
+
+        <rect x="252" y="0" width="54" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="279" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Nginx</text>
+      </g>
+    </g>
+
+    <!-- ==================== CARD 3: NEXA FINANCE CORE (Bottom-Left, Cobalt Blue) ==================== -->
+    <g transform="translate(18, 274)">
+      <rect x="0" y="0" width="423" height="198" rx="12" fill="url(#cardSurface)" stroke="#17365C" stroke-width="1.2" />
+      <rect x="1" y="0" width="421" height="2.5" rx="1.2" fill="#1976D2" fill-opacity="0.9" />
+      <line x1="0" y1="1.2" x2="140" y2="1.2" stroke="url(#laserBlue)" stroke-width="2.2">
+        <animate attributeName="x1" values="-140;423" dur="4.4s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="0;563" dur="4.4s" repeatCount="indefinite" />
+      </line>
+
+      <g transform="translate(392, 167)" fill="none" stroke="#38bdf8" stroke-opacity="0.18" stroke-width="1">
+        <path d="M31,0 L0,31" /><path d="M31,10 L10,31" /><path d="M31,20 L20,31" />
+        <path d="M0,31 A31,31 0 0 1 31,0" />
+      </g>
+
+      <rect x="22" y="22" width="40" height="40" rx="10" fill="url(#glowBlue)" stroke="#38bdf8" stroke-opacity="0.45" stroke-width="1" />
+      <g transform="translate(30, 30)" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="14" rx="2" />
+        <line x1="2" y1="9" x2="22" y2="9" />
+        <circle cx="6" cy="14" r="1.5" fill="#38bdf8" />
+      </g>
+
+      <text x="74" y="39" fill="#EAF2FF" font-size="16.5" font-weight="700" class="font-display">Nexa Finance Core</text>
+      <rect x="74" y="47" width="128" height="18" rx="9" fill="#09172B" stroke="#1976D2" stroke-opacity="0.75" stroke-width="1" />
+      <circle cx="83" cy="56" r="2.8" fill="#38bdf8" />
+      <circle cx="83" cy="56" r="2.8" fill="none" stroke="#38bdf8" stroke-width="1">
+        <animate attributeName="r" values="2.8;6.8;2.8" dur="2.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="93" y="59.5" fill="#7DD3FC" font-size="9.5" font-weight="600" letter-spacing="0.8" class="font-mono">PERSONAL LEDGER</text>
+
+      <text x="22" y="94" fill="#9FB3CC" font-size="11.5" class="font-display">Clean personal finance application with high-performance</text>
+      <text x="22" y="112" fill="#9FB3CC" font-size="11.5" class="font-display">SQLite storage, transient OTP verification, and zero telemetry.</text>
+
+      <g transform="translate(22, 148)">
+        <rect x="0" y="0" width="66" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="33" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Next.js</text>
+
+        <rect x="74" y="0" width="84" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="116" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">SQLite WAL</text>
+
+        <rect x="166" y="0" width="86" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="209" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">TailwindCSS</text>
+
+        <rect x="260" y="0" width="60" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="290" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Resend</text>
+      </g>
+    </g>
+
+    <!-- ==================== CARD 4: ASTRA AUTOMATION FLEET (Bottom-Right, Crimson) ==================== -->
+    <g transform="translate(459, 274)">
+      <rect x="0" y="0" width="423" height="198" rx="12" fill="url(#cardSurface)" stroke="#17365C" stroke-width="1.2" />
+      <rect x="1" y="0" width="421" height="2.5" rx="1.2" fill="#E62429" fill-opacity="0.85" />
+      <line x1="0" y1="1.2" x2="140" y2="1.2" stroke="url(#laserRed)" stroke-width="2.2">
+        <animate attributeName="x1" values="-140;423" dur="3.9s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="0;563" dur="3.9s" repeatCount="indefinite" />
+      </line>
+
+      <g transform="translate(392, 167)" fill="none" stroke="#E62429" stroke-opacity="0.18" stroke-width="1">
+        <path d="M31,0 L0,31" /><path d="M31,10 L10,31" /><path d="M31,20 L20,31" />
+        <path d="M0,31 A31,31 0 0 1 31,0" />
+      </g>
+
+      <rect x="22" y="22" width="40" height="40" rx="10" fill="url(#glowRed)" stroke="#E62429" stroke-opacity="0.45" stroke-width="1" />
+      <g transform="translate(30, 30)" stroke="#FF3340" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="9" width="18" height="11" rx="2" />
+        <circle cx="8" cy="14" r="1.5" fill="#FF3340" />
+        <circle cx="16" cy="14" r="1.5" fill="#FF3340" />
+        <path d="M8 5a4 4 0 0 1 8 0v4H8V5z" />
+      </g>
+
+      <text x="74" y="39" fill="#EAF2FF" font-size="16.5" font-weight="700" class="font-display">Astra Automation Fleet</text>
+      <rect x="74" y="47" width="142" height="18" rx="9" fill="#180B10" stroke="#E62429" stroke-opacity="0.65" stroke-width="1" />
+      <circle cx="83" cy="56" r="2.8" fill="#FF3340" />
+      <circle cx="83" cy="56" r="2.8" fill="none" stroke="#FF3340" stroke-width="1">
+        <animate attributeName="r" values="2.8;6.8;2.8" dur="2.0s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0;0.9" dur="2.0s" repeatCount="indefinite" />
+      </circle>
+      <text x="93" y="59.5" fill="#FF7B82" font-size="9.5" font-weight="600" letter-spacing="0.8" class="font-mono">EVENT MICROSERVICE</text>
+
+      <text x="22" y="94" fill="#9FB3CC" font-size="11.5" class="font-display">Modular event-driven microservices orchestrating automated</text>
+      <text x="22" y="112" fill="#9FB3CC" font-size="11.5" class="font-display">QRIS payment verification, Discord gateways, and health polling.</text>
+
+      <g transform="translate(22, 148)">
+        <rect x="0" y="0" width="76" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="38" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">Discord.js</text>
+
+        <rect x="84" y="0" width="52" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="110" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">PM2</text>
+
+        <rect x="144" y="0" width="80" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="184" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">QRIS Poller</text>
+
+        <rect x="232" y="0" width="72" height="22" rx="6" fill="#0E1D33" stroke="#17365C" stroke-width="0.9" />
+        <text x="268" y="14.5" fill="#EAF2FF" font-size="9.5" font-weight="600" text-anchor="middle" class="font-mono">REST API</text>
+      </g>
     </g>
   </g>
 
-  <!-- ==================== CARD 2: NEXA MOVIE (Top-Right) ==================== -->
-  <g transform="translate(462, 0)">
-    <rect x="0" y="0" width="438" height="208" rx="12" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" />
-    
-    <!-- Animated Top Edge Pulse -->
-    <line x1="20" y1="1" x2="160" y2="1" stroke="url(#laserEmerald)" stroke-width="2">
-      <animate attributeName="x1" values="-150;440" dur="4s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="0;590" dur="4s" repeatCount="indefinite" />
-    </line>
-
-    <!-- Icon Container -->
-    <rect x="24" y="22" width="42" height="42" rx="10" fill="url(#iconGlowEmerald)" stroke="#10b981" stroke-opacity="0.4" stroke-width="1" />
-    <g transform="translate(33, 31)" stroke="#10b981" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="3" width="20" height="16" rx="3" />
-      <polygon points="10 8 16 11 10 14 10 8" fill="#10b981" />
-    </g>
-
-    <!-- Title & Animated Badge -->
-    <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">Nexa Movie Engine</text>
-    <rect x="78" y="48" width="138" height="18" rx="9" fill="#0d1117" stroke="#1f6feb" stroke-width="1" />
-    
-    <circle cx="86" cy="57" r="3" fill="#388bfd" />
-    <circle cx="86" cy="57" r="3" fill="none" stroke="#388bfd" stroke-width="1">
-      <animate attributeName="r" values="3;7;3" dur="2.2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="1;0;1" dur="2.2s" repeatCount="indefinite" />
-    </circle>
-    
-    <text x="96" y="61" fill="#79c0ff" font-size="10" font-weight="600" class="font-mono">STREAMING PLATFORM</text>
-
-    <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Cloud media streaming web platform featuring custom HLS</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">transmuxing, sub-second audio sync, and automated TMDB pipeline.</text>
-
-    <!-- Tech Badges -->
-    <g transform="translate(24, 150)">
-      <rect x="0" y="0" width="62" height="22" rx="6" fill="#1f242c" />
-      <text x="31" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Python</text>
-      
-      <rect x="70" y="0" width="88" height="22" rx="6" fill="#1f242c" />
-      <text x="114" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Rclone VFS</text>
-      
-      <rect x="166" y="0" width="86" height="22" rx="6" fill="#1f242c" />
-      <text x="209" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">HLS Stream</text>
-      
-      <rect x="260" y="0" width="56" height="22" rx="6" fill="#1f242c" />
-      <text x="288" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Nginx</text>
-    </g>
-  </g>
-
-  <!-- ==================== CARD 3: NEXA FINANCE (Bottom-Left) ==================== -->
-  <g transform="translate(0, 232)">
-    <rect x="0" y="0" width="438" height="208" rx="12" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" />
-    
-    <!-- Animated Top Edge Pulse -->
-    <line x1="20" y1="1" x2="160" y2="1" stroke="url(#laserPurple)" stroke-width="2">
-      <animate attributeName="x1" values="-150;440" dur="4.2s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="0;590" dur="4.2s" repeatCount="indefinite" />
-    </line>
-
-    <!-- Icon Container -->
-    <rect x="24" y="22" width="42" height="42" rx="10" fill="url(#iconGlowPurple)" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1" />
-    <g transform="translate(33, 31)" stroke="#a855f7" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="4" width="20" height="14" rx="2" />
-      <line x1="2" y1="9" x2="22" y2="9" />
-      <circle cx="6" cy="14" r="1.5" fill="#a855f7" />
-    </g>
-
-    <!-- Title & Animated Badge -->
-    <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">Nexa Finance Core</text>
-    <rect x="78" y="48" width="124" height="18" rx="9" fill="#0d1117" stroke="#8957e5" stroke-width="1" />
-    
-    <circle cx="86" cy="57" r="3" fill="#a371f7" />
-    <circle cx="86" cy="57" r="3" fill="none" stroke="#a371f7" stroke-width="1">
-      <animate attributeName="r" values="3;7;3" dur="2.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="1;0;1" dur="2.5s" repeatCount="indefinite" />
-    </circle>
-    
-    <text x="96" y="61" fill="#d2a8ff" font-size="10" font-weight="600" class="font-mono">PERSONAL LEDGER</text>
-
-    <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Clean personal finance application with high-performance</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">SQLite storage, transient OTP verification, and zero telemetry.</text>
-
-    <!-- Tech Badges -->
-    <g transform="translate(24, 150)">
-      <rect x="0" y="0" width="68" height="22" rx="6" fill="#1f242c" />
-      <text x="34" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Next.js</text>
-      
-      <rect x="76" y="0" width="86" height="22" rx="6" fill="#1f242c" />
-      <text x="119" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">SQLite WAL</text>
-      
-      <rect x="170" y="0" width="88" height="22" rx="6" fill="#1f242c" />
-      <text x="214" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">TailwindCSS</text>
-      
-      <rect x="266" y="0" width="62" height="22" rx="6" fill="#1f242c" />
-      <text x="297" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Resend</text>
-    </g>
-  </g>
-
-  <!-- ==================== CARD 4: ASTRA ECOSYSTEM (Bottom-Right) ==================== -->
-  <g transform="translate(462, 232)">
-    <rect x="0" y="0" width="438" height="208" rx="12" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" />
-    
-    <!-- Animated Top Edge Pulse -->
-    <line x1="20" y1="1" x2="160" y2="1" stroke="url(#laserAmber)" stroke-width="2">
-      <animate attributeName="x1" values="-150;440" dur="3.8s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="0;590" dur="3.8s" repeatCount="indefinite" />
-    </line>
-
-    <!-- Icon Container -->
-    <rect x="24" y="22" width="42" height="42" rx="10" fill="url(#iconGlowAmber)" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1" />
-    <g transform="translate(33, 31)" stroke="#f59e0b" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="9" width="18" height="11" rx="2" />
-      <circle cx="8" cy="14" r="1.5" fill="#f59e0b" />
-      <circle cx="16" cy="14" r="1.5" fill="#f59e0b" />
-      <path d="M8 5a4 4 0 0 1 8 0v4H8V5z" />
-    </g>
-
-    <!-- Title & Animated Badge -->
-    <text x="78" y="40" fill="#f0f6fc" font-size="17" font-weight="700" class="font-sans">Astra Automation Fleet</text>
-    <rect x="78" y="48" width="134" height="18" rx="9" fill="#0d1117" stroke="#da3633" stroke-width="1" />
-    
-    <circle cx="86" cy="57" r="3" fill="#f85149" />
-    <circle cx="86" cy="57" r="3" fill="none" stroke="#f85149" stroke-width="1">
-      <animate attributeName="r" values="3;7;3" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
-    </circle>
-    
-    <text x="96" y="61" fill="#ff7b72" font-size="10" font-weight="600" class="font-mono">EVENT MICROSERVICE</text>
-
-    <!-- Description -->
-    <text x="24" y="98" fill="#8b949e" font-size="12" class="font-sans">Modular event-driven microservices orchestrating automated</text>
-    <text x="24" y="116" fill="#8b949e" font-size="12" class="font-sans">QRIS payment verification, Discord gateways, and health polling.</text>
-
-    <!-- Tech Badges -->
-    <g transform="translate(24, 150)">
-      <rect x="0" y="0" width="78" height="22" rx="6" fill="#1f242c" />
-      <text x="39" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">Discord.js</text>
-      
-      <rect x="86" y="0" width="56" height="22" rx="6" fill="#1f242c" />
-      <text x="114" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">PM2</text>
-      
-      <rect x="150" y="0" width="82" height="22" rx="6" fill="#1f242c" />
-      <text x="191" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">QRIS Poller</text>
-      
-      <rect x="240" y="0" width="76" height="22" rx="6" fill="#1f242c" />
-      <text x="278" y="15" fill="#c9d1d9" font-size="10" font-weight="500" text-anchor="middle" class="font-mono">REST API</text>
-    </g>
-  </g>
+  <rect x="0.5" y="0.5" width="899" height="491" rx="14" fill="none" stroke="#17365C" stroke-width="1.2" />
 </svg>
