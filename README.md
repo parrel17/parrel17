@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/spider_hero_v7.svg" width="100%" alt="Farrel Athallah — Spider-Verse GitHub Profile" />
+<img src="assets/spider_hero_v8.svg" width="100%" alt="Farrel Athallah — Spider-Verse GitHub Profile" />
 
 <br /><br />
 
@@ -16,7 +16,7 @@
 
 <br />
 
-<img src="assets/spider_terminal_v8.svg" width="100%" alt="Spider-Verse Developer Terminal" />
+<img src="assets/spider_terminal_v9.svg" width="100%" alt="Spider-Verse Developer Terminal" />
 
 <br /><br />
 
